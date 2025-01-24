@@ -160,6 +160,9 @@ $color_white: #fff;
                     }
                 }
             }
+            .header_menu{
+                display: none;
+            }
         }
 
         .main_section_image {
@@ -167,8 +170,13 @@ $color_white: #fff;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 800px;
             z-index: -1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         .hero_section {
@@ -176,10 +184,7 @@ $color_white: #fff;
             max-width: 1110px;
             margin: auto;
             display: flex;
-            // justify-content: flex-start;
-            // align-items: center;
             padding-top: 203px;
-            // border: 3px solid red;
 
             .hero_section_text {
                 width: 100%;
@@ -263,7 +268,6 @@ $color_white: #fff;
             }
         }
     }
-
     .section_category {
         width: 100%;
         max-width: 1110px;
@@ -316,7 +320,6 @@ $color_white: #fff;
             }
         }
     }
-
     .section_history {
         width: 100%;
         max-width: 1110px;
@@ -402,7 +405,6 @@ $color_white: #fff;
             }
         }
     }
-
     .section_4 {
         width: 100%;
         height: 357px;
@@ -476,7 +478,6 @@ $color_white: #fff;
             }
         }
     }
-
     .saction_ourFood {
         width: 100%;
         max-width: 1129px;
@@ -571,7 +572,6 @@ $color_white: #fff;
             }
         }
     }
-
     .section_ourMenu {
         width: 100%;
         max-width: 1440px;
@@ -702,9 +702,9 @@ $color_white: #fff;
             }
         }
     }
-
     .section_testimonial {
         width: 100%;
+        margin: auto;
         background-color: $color_gray50;
         padding: 104px 0;
 
@@ -717,6 +717,7 @@ $color_white: #fff;
             max-width: 920px;
             text-align: center;
             margin: auto;
+            
         }
 
         .section_testimonial_img {
@@ -778,10 +779,10 @@ $color_white: #fff;
             }
         }
     }
-
     .section_foodImg {
         width: 100%;
         max-width: 1440px;
+        margin: auto;
         margin-top: 101px;
 
         h1{
@@ -838,5 +839,74 @@ $color_white: #fff;
                 
             }
         }
+    }
+    .section_chefs{
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        margin-top: 100px;
+
+        h1{
+            text-align: center;
+            font-family: $font_Tinous;
+            font-size: 54px;
+            line-height: 62.9px;
+            font-weight: 400;
+            color: $color_black;
+
+            span{
+                color: $color_orange800;
+            }
+        }
+        .section_chefs_row{
+            width: 100%;
+            max-width: 1110px;
+            margin: auto;
+            margin-top: 107px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+
+            .section_chefs_row_col{
+                width: 350px;
+                height: 462px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .section_footer{
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+        margin-top: 100px;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+
+
+    @media screen and (max-width:1110px){
+        .main_section{
+            padding: 0 15px;
+            padding-top: 50px;
+        }
+    }
+    @media screen and (max-width:840px){
+        .main_section{
+            header{
+                .header_menu{
+                    display: block;
+                }
+            }
+        }
+
     }
 }
