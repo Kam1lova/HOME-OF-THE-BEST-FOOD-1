@@ -133,6 +133,11 @@
 .container .main_section header .header_menu {
   display: none;
 }
+.container .main_section header .header_menu .header_menu_ikon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .main_section .main_section_image {
   position: absolute;
   top: 0;
@@ -770,5 +775,8 @@
 @media screen and (max-width: 840px) {
   .container .main_section header .header_menu {
     display: block;
+  }
+  .container .main_section header nav {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
