@@ -772,10 +772,30 @@ $color_white: #fff;
                     width: 7px;
                     height: 7px;
                     border-radius: 50%;
-                    background-color: transparent border: 1px solid $color_orange900;
+                    background-color: transparent;
+                    border: 1px solid $color_orange900;
                 }
             }
         }
     }
 
+    .section_foodImg {
+        width: 100%;
+        max-width: 1440px;
+        margin-top: 101px;
+
+        h1{
+            
+            text-align: center;
+            font-family: $font_Tinous;
+            font-size: 54px;
+            line-height: 62.9px;
+            font-weight: 400;
+            color: $color_black;
+
+           span{
+            color: $color_orange900;
+           }
+        }
+    }
 }
